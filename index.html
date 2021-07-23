@@ -4,11 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>calcolo del prezzo del biglietto del treno</title>
 </head>
-<body>
-    
+<body class="debug">
+    <div class="container">
+        <h1>CALCOLO DEL PREZZO DEL TUO BIGLIETTO</h1>
+        <section id="form_container">
+            <div class="input">
+                <section id="input_1">
+                    <p>Nome Cognome</p>
+                    <input type="text" placeholder="Inserisci il tuo nome">
+                </section>
+                <section id="input_2">
+                    <p>Km da percorrere</p>
+                    <input type="number" placeholder="Inserisci i Km">
+                </section>
+                <section id="input_3">
+                    <p>Fascia d'età</p>
+                    <select name="fascia-detà">
+                        <option value="Minorenne">Minorenne</option>
+                        <option value="Maggiorenne">Maggiorenne</option>
+                        <option value="Over65">Over 65</option>
+                    </select>
+                </section>  
+            </div>          
+            <section class="bottoni">
+                <button class="btn">Genera</button>
+                <button class="btn">Annulla</button>
+            </section>
+        </section>   
+    </div>
     <script src="js/main.js"></script>
 </body>
 </html>
