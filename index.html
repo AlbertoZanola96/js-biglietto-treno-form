@@ -12,32 +12,37 @@
 </head>
 <body class="debug">
     <div class="container">
-        <h1>CALCOLO DEL PREZZO DEL TUO BIGLIETTO</h1>
-        <section id="form_container">
-            <div class="input">
-                <section id="input_1">
-                    <p>Nome Cognome</p>
-                    <input type="text" placeholder="Inserisci il tuo nome">
-                </section>
-                <section id="input_2">
-                    <p>Km da percorrere</p>
-                    <input type="number" placeholder="Inserisci i Km">
-                </section>
-                <section id="input_3">
-                    <p>Fascia d'età</p>
-                    <select name="fascia-detà">
-                        <option value="Minorenne">Minorenne</option>
-                        <option value="Maggiorenne">Maggiorenne</option>
-                        <option value="Over65">Over 65</option>
-                    </select>
-                </section>  
-            </div>          
-            <section class="bottoni">
-                <button class="btn">Genera</button>
-                <button class="btn">Annulla</button>
-            </section>
-        </section>   
+        <!-- primo input -->
+        <label for="nome">Nome e cognome</label>
+        <input type="text" name="nome" id="nome" placeholder="Inserisci il tuo nome">
+        <!-- fine primo input -->
+
+        <!-- secondo input -->
+        <label for="nome">Km da percorrere</label>
+        <input type="number" name="km" id="km" placeholder="Inserisci i Km">
+        <!-- fine secondo input -->
+
+        <!-- terzo input  -->
+        <label for="fascia-eta">Fascia d'età</label>
+        <select name="fascia-eta" id="fascia-eta">
+            <option value="min">Minorenne</option>
+            <option value="mag">Maggiorenne</option>
+            <option value="over">Over 65</option>
+        </select>
+        <!-- fine terzo input -->
     </div>
+
+    <div class="container">
+        <button id="prezzoBtn" name="prezzoBtn">Genera</button>
+        <button id="annulla" name="annulla">Annulla</button>
+    </div>
+
+    <div class="container">
+        <div id="biglietto" class="box">
+            PROVA
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
 </body>
 </html>
