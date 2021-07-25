@@ -5,17 +5,38 @@
 // - Prezzo calcolato
 // - Categoria selezionata dall'utente
 // - Aggiungiamo una piccola animazione al click su "Crea" e "Annulla", se clicchiamo su annulla dobbiamo ripulire il form.
-// BONUS: predisporre l'interfaccia grafica responsiva
 
 var btnGenera = document.getElementById("prezzoBtn");
 
 btnGenera.addEventListener("click",
     function() {
         var nome = document.getElementById("nome").value;
-        var km = document.getElementById("km").value;
+        var m = document.getElementById("km").value;
         var fasciaEta = document.getElementById("fascia-eta").value;
+        var prezzoKm = 0.21;
+        var costobiglietto = prezzoKm * km;
+        var offerta = "Biglietto Standard"
+
+        if (fasciaEta == "min") {
+            costobiglietto = costobiglietto * 0.80;
+            offerta = "Sconto Minorenne";
+        } else if (fasciaEta == "over") {
+            costobiglietto = costobiglietto * 0.60;
+            offerta = "Sconto Over 65";
+        }
+        costobiglietto = costobiglietto.toFixed(2);
+
+        //numero random e carrozza 
+        var numCar = Math.floor(Math.random() * 9)+ 1;
+        var numCp = Math.floor(Math.random() * (100000 - 90000)) + 90000;
+        
         var container_2 = document.getElementById("container_2");
-        container_2.style.display = "block";
+        container_2.style.display = "block";    
+        
+        document.getElementById("offerta").value = offerta;
+        document.getElementById("carrozza").value = numCar;
+        document.getElementById("codice-cp").value = numCp;
+        document.getElementById("costo").value = costobiglietto;
     }
 )
 
