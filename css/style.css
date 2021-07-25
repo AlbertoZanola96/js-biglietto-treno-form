@@ -8,10 +8,12 @@ body {
     background-color: #B91450;
 }
 
-.titolo {
+.titolo,
+.tuob {
     text-align: center;
     color: white;
     margin: 50px 0 20px 0;
+    font-size: 30px;
 }
 .container_1 {
     width: 80%;
@@ -60,10 +62,10 @@ button {
 }
 
 
-
-.box {
-    background-color: green;
-    width: 300px;
-    height: 100px;
+#container_2 {
+    width: 80%;
+    height: 200px;
+    background-color: white;
+    margin: 0 auto;
     display: none;
 }
