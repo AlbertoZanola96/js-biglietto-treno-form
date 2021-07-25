@@ -11,31 +11,44 @@
     <title>calcolo del prezzo del biglietto del treno</title>
 </head>
 <body class="debug">
-    <div class="container">
-        <!-- primo input -->
-        <label for="nome">Nome e cognome</label>
-        <input type="text" name="nome" id="nome" placeholder="Inserisci il tuo nome">
-        <!-- fine primo input -->
+    <h1 class="titolo">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <div class="container_1">
+        <div class="parte_1">
+            <section class="ipt">
+                <!-- primo input -->
+                <label for="nome">Nome e cognome</label>
+                <input type="text" name="nome" id="nome" placeholder=" Inserisci il tuo nome">
+                <!-- fine primo input -->
+            </section>
+            <section class="ipt">
+                <!-- secondo input -->
+                <label for="nome">Km da percorrere</label>
+                <input type="number" name="km" id="km" placeholder=" Inserisci i Km">
+                <!-- fine secondo input -->
+            </section>
+            <section class="ipt">
+                <!-- terzo input  -->
+                <label for="fascia-eta">Fascia d'età</label>
+                <select name="fascia-eta" id="fascia-eta">
+                    <option value="min">Minorenne</option>
+                    <option value="mag">Maggiorenne</option>
+                    <option value="over">Over 65</option>
+                </select>
+            </section>
 
-        <!-- secondo input -->
-        <label for="nome">Km da percorrere</label>
-        <input type="number" name="km" id="km" placeholder="Inserisci i Km">
-        <!-- fine secondo input -->
+            <!-- fine terzo input -->
+        </div>
+        <div class="parte_2">
+            <button id="prezzoBtn" name="prezzoBtn">Genera</button>
+            <button id="annulla" name="annulla">Annulla</button>
+        </div>
 
-        <!-- terzo input  -->
-        <label for="fascia-eta">Fascia d'età</label>
-        <select name="fascia-eta" id="fascia-eta">
-            <option value="min">Minorenne</option>
-            <option value="mag">Maggiorenne</option>
-            <option value="over">Over 65</option>
-        </select>
-        <!-- fine terzo input -->
+
+
+
+
     </div>
 
-    <div class="container">
-        <button id="prezzoBtn" name="prezzoBtn">Genera</button>
-        <button id="annulla" name="annulla">Annulla</button>
-    </div>
 
     <div class="container">
         <div id="biglietto" class="box">

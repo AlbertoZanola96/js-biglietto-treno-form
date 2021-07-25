@@ -5,7 +5,61 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #B91450;
 }
+
+.titolo {
+    text-align: center;
+    color: white;
+    margin: 50px 0 20px 0;
+}
+.container_1 {
+    width: 80%;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.parte_1 {
+    display: flex;
+    justify-content: center;
+}
+
+.ipt {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px 60px 30px;
+    font-size: 25px;
+    color: #B91450;
+}
+
+.ipt input,
+.ipt select {
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #B91450;
+}
+.parte_2 {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    color: #B91450;
+    border-radius: 5px;
+    background-color: lightgray;
+    border: 1px solid gray;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
 
 .box {
     background-color: green;
