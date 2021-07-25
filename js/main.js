@@ -11,7 +11,7 @@ var btnGenera = document.getElementById("prezzoBtn");
 btnGenera.addEventListener("click",
     function() {
         var nome = document.getElementById("nome").value;
-        var m = document.getElementById("km").value;
+        var km = document.getElementById("km").value;
         var fasciaEta = document.getElementById("fascia-eta").value;
         var prezzoKm = 0.21;
         var costobiglietto = prezzoKm * km;
@@ -33,6 +33,7 @@ btnGenera.addEventListener("click",
         var container_2 = document.getElementById("container_2");
         container_2.style.display = "block";    
         
+        document.getElementById("nome_biglietto").value = nome;
         document.getElementById("offerta").value = offerta;
         document.getElementById("carrozza").value = numCar;
         document.getElementById("codice-cp").value = numCp;
