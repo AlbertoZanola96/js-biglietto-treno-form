@@ -89,5 +89,19 @@ button {
     align-items: center;
 }
 
+table {
+    margin-left: 100px;
+}
+
+th,
+td {
+    padding-right: 50px;
+}
+
+.nome h5 {
+    font-size: 20px;
+}
+
+
 
 

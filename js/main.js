@@ -33,11 +33,11 @@ btnGenera.addEventListener("click",
         var container_2 = document.getElementById("container_2");
         container_2.style.display = "block";    
         
-        document.getElementById("nome_biglietto").value = nome;
-        document.getElementById("offerta").value = offerta;
-        document.getElementById("carrozza").value = numCar;
-        document.getElementById("codice-cp").value = numCp;
-        document.getElementById("costo").value = costobiglietto;
+        document.getElementById("nome_biglietto").innerHTML = nome;
+        document.getElementById("offerta").innerHTML = offerta;
+        document.getElementById("carrozza").innerHTML = numCar;
+        document.getElementById("codice-cp").innerHTML = numCp;
+        document.getElementById("costo").innerHTML = costobiglietto;
     }
 )
 
